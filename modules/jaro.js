@@ -1,5 +1,7 @@
 import BitArray from "./BitArray.js"
 
+const {min, max} = Math;
+
 function jaro(str1, str2) {
   if(str1 === str2) return 1;
 
@@ -8,14 +10,14 @@ function jaro(str1, str2) {
   let matches = 0 , transposition = 0;
 
   { // correspondencias
-    const MATCH = parseInt(Math.max(Math.max(S1_LEN, S2_LEN) / 2 - 1, 0));
+    const MATCH = parseInt(max(max(S1_LEN, S2_LEN) / 2 - 1, 0));
 
     if(MATCH === 0) return 0;
 
     let y = 0 , x = 0, start = 0, end = 0;
     for(; y < S1_LEN; y++) {
-      x = start = Math.max(0, y - MATCH);
-      end = Math.min(y + MATCH + 1, S2_LEN);
+      x = start = max(0, y - MATCH);
+      end = min(y + MATCH + 1, S2_LEN);
 
       for(; x < end; x++) {
         if(str2Matches[x] || str1[y] !== str2[x]) continue;
