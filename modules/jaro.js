@@ -35,7 +35,7 @@ function jaro(str1, str2) {
   for(let i = 0, k = 0; i < S1_LEN; i++) {
     if(!str1Matches[i]) continue;
 
-    while(!str2Matches[k]) k++;
+    while(k < S2_LEN && !str2Matches[k]) k++;
 
     if(str1[i] !== str2[k]) transposition++;
 
