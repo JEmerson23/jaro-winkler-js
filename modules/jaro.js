@@ -25,21 +25,20 @@ function jaro(str1, str2) {
         break;
       }
     }
-
-    if(matches === 0) return 0;
   }
+  
+  if(matches === 0) return 0;
 
-  { // transposição
-    for(let i = 0, k = 0; i < str1; y++) {
-      if(!str1Matches) continue;
+  // transposição
+  for(let i = 0, k = 0; i < S1_LEN; i++) {
+    if(!str1Matches[i]) continue;
 
-      while(!str2Matches[k]) k++;
+    while(!str2Matches[k]) k++;
 
-      if(str1[i] !== str2[k]) transposition++;
+    if(str1[i] !== str2[k]) transposition++;
 
-      k++;
-    }
-  } 
+    k++;
+  }
 
   return (1.0 / 3.0) * (matches / S1_LEN + matches / S2_LEN + ((matches - transposition) / matches));
 }
