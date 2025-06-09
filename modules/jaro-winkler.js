@@ -2,6 +2,12 @@ import BitArray from "./BitArray.js";
 
 const {min, max} = Math;
 
+/*
+* @param {string} str1 - string.
+* @param {string} str2 - string.
+* @param [float] prefixWeigth - A float number between 0.1 and 1.
+* @returns {float} A float Number between 0 and 1.
+*/
 function jaroWinkler(str1, str2, prefixWeigth) {
   if(str1 === str2) return 1;
 

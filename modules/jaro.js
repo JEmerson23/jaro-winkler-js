@@ -2,6 +2,11 @@ import BitArray from "./BitArray.js"
 
 const {min, max} = Math;
 
+/*
+* @param {string} str1 - string.
+* @param {string} str2 - string.
+* @returns {float} A float Number between 0 and 1.
+*/
 function jaro(str1, str2) {
   if(str1 === str2) return 1;
 
