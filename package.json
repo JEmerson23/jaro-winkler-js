@@ -1,0 +1,23 @@
+{
+  "name": "jaro-winkler",
+  "version": "0.1.1",
+  "description": "jaro and jaro-winkler algotihms lib",
+  "keywords": [
+    "jaro-winkler",
+    "jaro",
+    "jaro-distance",
+    "jaro-winkler-distance"
+  ],
+  "license": "MIT",
+  "author": "JEmerson23",
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/JEmerson23/jaro-winkler-js.git"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test-jaro-speed": "node ./tests/jaro-speed.test.cjs",
+    "test-winkler-speed": "node ./tests/jaro-winkler-speed.test.cjs"
+  }
+}
