@@ -1,11 +1,11 @@
 {
-  "name": "jaro-winkler",
+  "name": "jaro-lib",
   "version": "1.0.2",
-  "description": "jaro and jaro-winkler algotihms lib",
+  "description": "jaro-lib library provides optimized jaro and jaro-winkler algorithms",
   "keywords": [
+    "jaro-lib",
     "jaro-winkler",
     "jaro",
-    "jaro-distance",
     "jaro-winkler-distance"
   ],
   "license": "MIT",
