@@ -1,6 +1,6 @@
 {
   "name": "jaro-lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "jaro-lib library provides optimized jaro and jaro-winkler algorithms",
   "keywords": [
     "jaro-lib",
@@ -10,7 +10,7 @@
   ],
   "license": "MIT",
   "author": "JEmerson23",
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/JEmerson23/jaro-winkler-js.git"
   },
